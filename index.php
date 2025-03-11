@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .link {
+            color: #3498db;
+            text-decoration: underline;
+        }
+        .divider {
+            border-bottom: 1px solid #ddd;
+            margin: 20px 0;
+        }
+        .contact-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .contact-buttons a {
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>プライバシーポリシー</h1>
+
+    <section>
+        <h2>1. プライバシーポリシー</h2>
+        <div class="divider"></div>
+        <p>
+            このプライバシーポリシー（以下「本ポリシー」といいます。）は、本アプリケーション（以下「本アプリ」といいます。）における利用者のプライバシー保護の取り組みについて定めるものです。本アプリは、Appleによる課金システムのみを採用しており、利用者の登録やログインを必要としません。利用者は、本アプリを利用することにより、本ポリシーに同意したものとみなされます。
+        </p>
+    </section>
+
+    <section>
+        <h2>2. 収集する情報</h2>
+        <div class="divider"></div>
+        <p>
+            本アプリは、利用者から直接的に個人情報を収集することはございません。ただし、本アプリにおける課金処理はAppleのシステムを通じて行われ、Appleが該当の情報を収集・管理する場合があります。これらの情報の取り扱いにつきましては、Appleのプライバシーポリシーに準じます。
+        </p>
+    </section>
+
+    <section>
+        <h2>3. 情報の利用目的</h2>
+        <div class="divider"></div>
+        <p>
+            本アプリは、利用者の個人情報を直接収集しないため、情報の利用目的はありません。なお、Appleによる課金処理に関しては、Appleのシステム内でのみ利用されるものとします。
+        </p>
+    </section>
+
+    <section>
+        <h2>4. 情報の第三者提供</h2>
+        <div class="divider"></div>
+        <p>
+            本アプリは、利用者の個人情報を第三者に提供することは一切ございません。また、Appleが課金処理の過程で取得する情報も、Appleのプライバシーポリシーに基づき管理されます。
+        </p>
+    </section>
+
+    <section>
+        <h2>5. セキュリティ</h2>
+        <div class="divider"></div>
+        <p>
+            本アプリは、利用者の個人情報保護のために適切な技術的措置を講じています。ただし、本アプリ自体は利用者の個人情報を直接取り扱わないため、実質的なセキュリティ対策はAppleのシステムに依存するものとなります。Appleのシステムに関するセキュリティ対策については、Appleの公式な情報を参照ください。
+        </p>
+    </section>
+
+    <section>
+        <h2>6. 未成年者の利用</h2>
+        <div class="divider"></div>
+        <p>
+            本アプリは未成年者の利用に際し、特段の制限を設けておりません。未成年者の個人情報は一切収集しないため、安心してご利用いただけます。
+        </p>
+    </section>
+
+    <section>
+        <h2>7. プライバシーポリシーの変更</h2>
+        <div class="divider"></div>
+        <p>
+            本ポリシーは、法令の改正や本アプリのサービス内容の変更等に伴い、必要に応じて改定されることがあります。改定後のプライバシーポリシーは、本アプリ内またはSNS公式アカウント上に掲載された時点から効力を生じるものとします。改定内容については、ユーザーに通知する方法として、アプリ内での通知や、SNS公式アカウントにおける告知等を予定しています。
+        </p>
+    </section>
+
+    <section>
+        <h2>8. お問い合わせ</h2>
+        <div class="divider"></div>
+        <p>
+            本ポリシーに関するご質問やご不明点がございましたら、以下の方法でお問い合わせください。
+        </p>
+        <div class="contact-buttons">
+            <a href="mailto:support@example.com">フィードバック</a>
+            <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
+        </div>
+    </section>
+</body>
+</html>
