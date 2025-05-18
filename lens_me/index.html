@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lens Me - プライバシーポリシー</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #00BCD4;
+            --secondary-color: #00838F;
+            --accent-color: #FF5252;
+            --text-color: #2E2E2E;
+            --light-color: #F8F9FA;
+            --dark-color: #343A40;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 0 0 var(--border-radius) var(--border-radius);
+            margin-bottom: 30px;
+            box-shadow: var(--box-shadow);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        nav {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 15px;
+            margin-bottom: 30px;
+            box-shadow: var(--box-shadow);
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+        }
+        
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .nav-link {
+            color: var(--dark-color);
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: var(--border-radius);
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+        
+        .nav-link:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        section {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: var(--box-shadow);
+        }
+        
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 25px;
+            background-color: var(--accent-color);
+            margin-right: 15px;
+            border-radius: 4px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .divider {
+            margin: 25px 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+        }
+        
+        .link {
+            color: var(--primary-color);
+            text-decoration: underline;
+            transition: var(--transition);
+        }
+        
+        .link:hover {
+            color: var(--accent-color);
+        }
+        
+        .contact-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .contact-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .contact-button {
+            padding: 12px 25px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .contact-button:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+        
+        .contact-button svg {
+            margin-right: 8px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--dark-color);
+            font-size: 0.9rem;
+        }
+        
+        /* レスポンシブデザイン */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 20px;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-link {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Lens Me - プライバシーポリシー</h1>
+            <p class="subtitle">ユーザーのプライバシーを尊重し、個人情報の保護に取り組んでいます。</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <nav>
+            <div class="nav-links">
+                <a href="#policy" class="nav-link">ポリシーについて</a>
+                <a href="#collection" class="nav-link">情報収集</a>
+                <a href="#purpose" class="nav-link">利用目的</a>
+                <a href="#sharing" class="nav-link">情報共有</a>
+                <a href="#security" class="nav-link">セキュリティ</a>
+                <a href="#minors" class="nav-link">未成年者</a>
+                <a href="#changes" class="nav-link">変更</a>
+                <a href="#contact" class="nav-link">お問い合わせ</a>
+            </div>
+        </nav>.0">
+    <title>Lens Me - プライバシーポリシー</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .link {
+            color: #3498db;
+            text-decoration: underline;
+        }
+        .divider {
+            border-bottom: 1px solid #ddd;
+            margin: 20px 0;
+        }
+        .contact-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .contact-buttons a {
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lens Me - プライバシーポリシー</h1>
+    <section>
+        <h2>1. プライバシーポリシー</h2>
+        <div class="divider"></div>
+        <p>
+            このプライバシーポリシー（以下「本ポリシー」といいます。）は、Lens Meアプリケーション（以下「本アプリ」といいます。）における利用者のプライバシー保護の取り組みについて定めるものです。本アプリは、Appleによる課金システムのみを採用しており、利用者の登録やログインを必要としません。利用者は、本アプリを利用することにより、本ポリシーに同意したものとみなされます。
+        </p>
+    </section>
+    <section>
+        <h2>2. 収集する情報</h2>
+        <div class="divider"></div>
+        <p>
+            本アプリは、利用者から直接的に個人情報を収集することはございません。ただし、本アプリにおける課金処理はAppleのシステムを通じて行われ、Appleが該当の情報を収集・管理する場合があります。これらの情報の取り扱いにつきましては、Appleのプライバシーポリシーに準じます。
+        </p>
+    </section>
+    <section>
+        <h2>3. 情報の利用目的</h2>
+        <div class="divider"></div>
+        <p>
+            本アプリは、利用者の個人情報を直接収集しないため、情報の利用目的はありません。なお、Appleによる課金処理に関しては、Appleのシステム内でのみ利用されるものとします。
+        </p>
+    </section>
+    <section>
+        <h2>4. 情報の第三者提供</h2>
+        <div class="divider"></div>
+        <p>
+            本アプリは、利用者の個人情報を第三者に提供することは一切ございません。また、Appleが課金処理の過程で取得する情報も、Appleのプライバシーポリシーに基づき管理されます。
+        </p>
+    </section>
+    <section>
+        <h2>5. セキュリティ</h2>
+        <div class="divider"></div>
+        <p>
+            本アプリは、利用者の個人情報保護のために適切な技術的措置を講じています。ただし、本アプリ自体は利用者の個人情報を直接取り扱わないため、実質的なセキュリティ対策はAppleのシステムに依存するものとなります。Appleのシステムに関するセキュリティ対策については、Appleの公式な情報を参照ください。
+        </p>
+    </section>
+    <section>
+        <h2>6. 未成年者の利用</h2>
+        <div class="divider"></div>
+        <p>
+            本アプリは未成年者の利用に際し、特段の制限を設けておりません。未成年者の個人情報は一切収集しないため、安心してご利用いただけます。
+        </p>
+    </section>
+    <section>
+        <h2>7. プライバシーポリシーの変更</h2>
+        <div class="divider"></div>
+        <p>
+            本ポリシーは、法令の改正や本アプリのサービス内容の変更等に伴い、必要に応じて改定されることがあります。改定後のプライバシーポリシーは、本アプリ内またはSNSアカウント上に掲載された時点から効力を生じるものとします。改定内容については、ユーザーに通知する方法として、アプリ内での通知や、SNS公式アカウントにおける告知等を予定しています。
+        </p>
+    </section>
+    <section>
+        <h2>8. お問い合わせ</h2>
+        <div class="divider"></div>
+        <p>
+            本ポリシーに関するご質問やご不明点がございましたら、以下の方法でお問い合わせください。
+        </p>
+        <div class="contact-buttons">
+            <a href="mailto:yoruhub.app+lensme@gmail.com">フィードバック</a>
+            <a href="https://x.com/YoRuHub" target="_blank">X</a>
+        </div>
+    </section>
+</body>
+</html>
