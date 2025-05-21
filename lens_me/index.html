@@ -93,57 +93,13 @@
             font-weight: 400;
         }
         
-        /* ナビゲーション */
-        .nav {
-            margin-top: 40px;
-            margin-bottom: 40px;
-        }
-        
-        .tab-container {
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            gap: 12px;
-            padding: 8px 4px;
-            scrollbar-width: none; /* Firefox */
-            -ms-overflow-style: none; /* IE and Edge */
-        }
-        
-        .tab-container::-webkit-scrollbar {
-            display: none; /* Chrome, Safari, Opera */
-        }
-        
-        .tab {
-            flex: 0 0 auto;
-            border: none;
-            padding: 10px 20px;
-            background-color: var(--white);
-            color: var(--gray);
-            border-radius: 24px;
-            font-weight: 500;
-            font-size: 14px;
-            cursor: pointer;
-            transition: all 0.3s var(--easing);
-            white-space: nowrap;
-            box-shadow: var(--shadow-sm);
-        }
-        
-        .tab.active {
-            background-color: var(--primary);
-            color: var(--white);
-            box-shadow: var(--shadow);
-        }
-        
-        .tab:hover:not(.active) {
-            background-color: rgba(99, 102, 241, 0.1);
-        }
-        
         /* コンテンツセクション */
         .sections-container {
             display: flex;
             flex-direction: column;
             gap: 24px;
             margin-bottom: 60px;
+            margin-top: 40px;
         }
         
         .section {
@@ -152,13 +108,6 @@
             box-shadow: var(--shadow);
             overflow: hidden;
             transition: all 0.5s var(--easing);
-            max-height: 0;
-            opacity: 0;
-        }
-        
-        .section.active {
-            max-height: 2000px;
-            opacity: 1;
         }
         
         .section-header {
@@ -291,11 +240,6 @@
         
         /* モバイル最適化 */
         @media (max-width: 768px) {
-            .tab {
-                padding: 8px 16px;
-                font-size: 13px;
-            }
-            
             .section-header {
                 padding: 20px;
             }
@@ -364,23 +308,10 @@
     </header>
     
     <main class="container">
-        <nav class="nav" aria-label="プライバシーポリシーのセクション">
-            <div class="tab-container" id="tabs">
-                <button class="tab active" data-section="policy">ポリシーについて</button>
-                <button class="tab" data-section="collection">情報収集</button>
-                <button class="tab" data-section="purpose">利用目的</button>
-                <button class="tab" data-section="sharing">情報共有</button>
-                <button class="tab" data-section="security">セキュリティ</button>
-                <button class="tab" data-section="minors">未成年者</button>
-                <button class="tab" data-section="changes">変更</button>
-                <button class="tab" data-section="contact">お問い合わせ</button>
-            </div>
-        </nav>
-        
         <div class="sections-container" id="sections">
             <!-- セクション1: プライバシーポリシー -->
-            <section class="section active open" id="policy">
-                <div class="section-header" tabindex="0" role="button" aria-expanded="true" aria-controls="policy-content">
+            <section class="section" id="policy">
+                <div class="section-header" tabindex="0" role="button" aria-expanded="false" aria-controls="policy-content">
                     <div class="section-number">1</div>
                     <h2 class="section-title">プライバシーポリシー</h2>
                     <div class="section-toggle">
@@ -537,43 +468,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // タブ切り替え機能
-            const tabs = document.querySelectorAll('.tab');
-            const sections = document.querySelectorAll('.section');
-            
-            // 最初のセクションをアクティブにする
-            document.querySelector('.section').classList.add('active');
-            
-            tabs.forEach(tab => {
-                tab.addEventListener('click', () => {
-                    // タブのアクティブ状態を切り替え
-                    tabs.forEach(t => t.classList.remove('active'));
-                    tab.classList.add('active');
-                    
-                    // セクションの表示を切り替え
-                    const targetId = tab.dataset.section;
-                    sections.forEach(section => {
-                        if (section.id === targetId) {
-                            section.classList.add('active');
-                            section.classList.add('open');
-                        } else {
-                            section.classList.remove('active');
-                        }
-                    });
-                    
-                    // タブが見えるようにスクロール
-                    const tabContainer = document.getElementById('tabs');
-                    const activeTab = document.querySelector('.tab.active');
-                    if (activeTab) {
-                        const scrollPosition = activeTab.offsetLeft - tabContainer.offsetWidth / 2 + activeTab.offsetWidth / 2;
-                        tabContainer.scrollTo({
-                            left: scrollPosition,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-            
             // アコーディオン機能
             const sectionHeaders = document.querySelectorAll('.section-header');
             
